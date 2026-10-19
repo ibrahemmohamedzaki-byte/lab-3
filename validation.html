@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="validation.html">Registration</a>
+        <a href="data.html">Data Table</a>
+    </nav>
+
+    <h1>Registration Form</h1>
+
+    <form id="regForm" novalidate>
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <p class="error" id="nameError" role="alert"></p>
+        </div>
+
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <p class="error" id="emailError" role="alert"></p>
+        </div>
+
+        <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <p class="error" id="passwordError" role="alert"></p>
+        </div>
+
+        <div class="field">
+            <label for="confirm">Confirm password</label>
+            <input type="password" id="confirm" name="confirm">
+            <p class="error" id="confirmError" role="alert"></p>
+        </div>
+
+        <div class="field">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+            <p class="error" id="ageError" role="alert"></p>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="success" hidden>Registration successful!</p>
+
+    <script src="validation.js"></script>
+</body>
+</html>
